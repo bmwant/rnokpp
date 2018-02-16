@@ -11,9 +11,32 @@
     <script src="/static/js/main.js"></script>
 </head>
 <body>
+<div class="siimple-navbar siimple-navbar--yellow siimple-navbar--fluid">
+    <div class="siimple-layout--left">
+        <a class="siimple-navbar-title">My blog name</a>
+    </div>
+    <div class="siimple-layout--right">
+        <a class="siimple-navbar-link">Link 1</a>
+        <a class="siimple-navbar-link">Link 2</a>
+    </div>
+</div>
 <div class="siimple-grid">
+    <div class="siimple-form">
+        <label class="siimple-label">Введіть ІПН:</label>
+        <input id="target-value" type="text" class="siimple-input" placeholder="0123456789" maxlength="10">
+    </div>
+
     <div class="siimple-grid-row">
-        <div class="siimple-grid-col siimple-grid-col--12">12</div>
+        <div class="siimple-grid-col siimple-grid-col--1" id="digit-0"><div class="siimple-alert siimple-alert--grey">0</div></div>
+        <div class="siimple-grid-col siimple-grid-col--1" id="digit-1"><div class="siimple-alert siimple-alert--grey">1</div></div>
+        <div class="siimple-grid-col siimple-grid-col--1" id="digit-2"><div class="siimple-alert siimple-alert--grey">2</div></div>
+        <div class="siimple-grid-col siimple-grid-col--1" id="digit-3"><div class="siimple-alert siimple-alert--grey">3</div></div>
+        <div class="siimple-grid-col siimple-grid-col--1" id="digit-4"><div class="siimple-alert siimple-alert--grey">4</div></div>
+        <div class="siimple-grid-col siimple-grid-col--1" id="digit-5"><div class="siimple-alert siimple-alert--grey">5</div></div>
+        <div class="siimple-grid-col siimple-grid-col--1" id="digit-6"><div class="siimple-alert siimple-alert--grey">6</div></div>
+        <div class="siimple-grid-col siimple-grid-col--1" id="digit-7"><div class="siimple-alert siimple-alert--grey">7</div></div>
+        <div class="siimple-grid-col siimple-grid-col--1" id="digit-8"><div class="siimple-alert siimple-alert--grey">8</div></div>
+        <div class="siimple-grid-col siimple-grid-col--1" id="digit-9"><div class="siimple-alert siimple-alert--grey">9</div></div>
     </div>
 </div>
 </body>
