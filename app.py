@@ -9,7 +9,8 @@ from utils import logger
 
 
 async def index(request):
-    return web.Response(text='PR review notifier')
+    response = web.FileResponse('templates/index.html')
+    return response
 
 
 app = web.Application()
