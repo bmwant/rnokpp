@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="/static/css/style.css">
 
     <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="/node_modules/moment/moment.js"></script>
     <script src="/static/js/main.js"></script>
 </head>
 <body>
@@ -27,17 +28,39 @@
     </div>
 
     <div class="siimple-grid-row">
-        <div class="siimple-grid-col siimple-grid-col--1" id="digit-0"><div class="siimple-alert siimple-alert--grey">0</div></div>
-        <div class="siimple-grid-col siimple-grid-col--1" id="digit-1"><div class="siimple-alert siimple-alert--grey">1</div></div>
-        <div class="siimple-grid-col siimple-grid-col--1" id="digit-2"><div class="siimple-alert siimple-alert--grey">2</div></div>
-        <div class="siimple-grid-col siimple-grid-col--1" id="digit-3"><div class="siimple-alert siimple-alert--grey">3</div></div>
-        <div class="siimple-grid-col siimple-grid-col--1" id="digit-4"><div class="siimple-alert siimple-alert--grey">4</div></div>
-        <div class="siimple-grid-col siimple-grid-col--1" id="digit-5"><div class="siimple-alert siimple-alert--grey">5</div></div>
-        <div class="siimple-grid-col siimple-grid-col--1" id="digit-6"><div class="siimple-alert siimple-alert--grey">6</div></div>
-        <div class="siimple-grid-col siimple-grid-col--1" id="digit-7"><div class="siimple-alert siimple-alert--grey">7</div></div>
-        <div class="siimple-grid-col siimple-grid-col--1" id="digit-8"><div class="siimple-alert siimple-alert--grey">8</div></div>
-        <div class="siimple-grid-col siimple-grid-col--1" id="digit-9"><div class="siimple-alert siimple-alert--grey">9</div></div>
+        <div class="siimple-grid-col siimple-grid-col--1"><div id="digit-0" class="digit siimple-alert siimple-alert--purple">&nbsp;</div></div>
+        <div class="siimple-grid-col siimple-grid-col--1"><div id="digit-1" class="digit siimple-alert siimple-alert--purple">&nbsp;</div></div>
+        <div class="siimple-grid-col siimple-grid-col--1"><div id="digit-2" class="digit siimple-alert siimple-alert--purple">&nbsp;</div></div>
+        <div class="siimple-grid-col siimple-grid-col--1"><div id="digit-3" class="digit siimple-alert siimple-alert--purple">&nbsp;</div></div>
+        <div class="siimple-grid-col siimple-grid-col--1"><div id="digit-4" class="digit siimple-alert siimple-alert--purple">&nbsp;</div></div>
+        <div class="siimple-grid-col siimple-grid-col--1"><div id="digit-5" class="digit siimple-alert siimple-alert--blue">&nbsp;</div></div>
+        <div class="siimple-grid-col siimple-grid-col--1"><div id="digit-6" class="digit siimple-alert siimple-alert--blue">&nbsp;</div></div>
+        <div class="siimple-grid-col siimple-grid-col--1"><div id="digit-7" class="digit siimple-alert siimple-alert--blue">&nbsp;</div></div>
+        <div class="siimple-grid-col siimple-grid-col--1"><div id="digit-8" class="digit siimple-alert siimple-alert--blue">&nbsp;</div></div>
+        <div class="siimple-grid-col siimple-grid-col--1"><div id="digit-9" class="digit siimple-alert siimple-alert--green">&nbsp;</div></div>
+    </div>
+
+    <div class="siimple-grid-row">
+        <div class="siimple-grid-col siimple-grid-col--5"><div class="siimple-alert siimple-alert--purple">&nbsp;</div></div>
+        <div class="siimple-grid-col siimple-grid-col--4"><div class="siimple-alert siimple-alert--blue">&nbsp;</div></div>
+    </div>
+    <div class="siimple-grid-row">
+        <div class="siimple-grid-col siimple-grid-col--8"><div class="siimple-alert siimple-alert--grey">&nbsp;</div></div>
+        <div class="siimple-grid-col siimple-grid-col--1"><div class="siimple-alert siimple-alert--teal">&nbsp;</div></div>
+        <div class="siimple-grid-col siimple-grid-col--1"><div class="siimple-alert siimple-alert--green">&nbsp;</div></div>
     </div>
 </div>
+<div id="#error-message" class="siimple-tip siimple-tip--red siimple-tip--exclamation">
+  <strong>Невірний код! Введена контрольна цифра не співпадає!</strong>
+</div>
+<div class="siimple-tip siimple-tip--teal">
+  Дата народження власника цього коду: <strong id="birthday"></strong>
+</div>
+<div class="siimple-tip siimple-tip--teal">
+  Стать власника коду: <strong id="sex"></strong>
+</div>
+<!--<div class="siimple-footer siimple-footer&#45;&#45;teal siimple-footer&#45;&#45;fluid" align="center">-->
+    <!--just checking footer-->
+<!--</div>-->
 </body>
 </html>
