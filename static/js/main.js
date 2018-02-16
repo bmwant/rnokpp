@@ -1,7 +1,10 @@
+TOTAL_DIGITS_IN_CODE = 10;
+
 function fillDigits(number) {
   var strNumber = number.toString();
-  for(var i = 0; i < strNumber.length; i++) {
-    $("#digit-" + i).text(strNumber.charAt(i));
+  for(var i = 0; i < TOTAL_DIGITS_IN_CODE; i++) {
+    var value =  i < strNumber.length ? strNumber.charAt(i) : '&nbsp;';
+    $("#digit-" + i).html(value);
   }
 }
 
@@ -45,12 +48,17 @@ $(function() {
   $("#target-value").on('keyup', function() {
     var enteredValue = $(this).val();
     fillDigits(enteredValue);
-    if(enteredValue.toString().length === 10) {
+    $('#info-message').hide();
+    $('#error-message').hide();
+    if(enteredValue.toString().length === TOTAL_DIGITS_IN_CODE) {
       if(!isCodeValid(enteredValue)) {
         $('#error-message').show();
+        $('#digit-9').removeClass('siimple-alert--green').addClass('siimple-alert--red');
       } else {
+        $('#info-message').show();
         $('#birthday').text(getBirthDate(enteredValue).format('D MMMM YYYY'));
         $("#sex").text(getSex(enteredValue));
+        $('#digit-9').removeClass('siimple-alert--red').addClass('siimple-alert--green');
       }
     }
   });

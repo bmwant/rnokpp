@@ -14,7 +14,7 @@
 <body>
 <div class="siimple-navbar siimple-navbar--yellow siimple-navbar--fluid">
     <div class="siimple-layout--left">
-        <a class="siimple-navbar-title">My blog name</a>
+        <a href="/" class="siimple-navbar-title">RNOKPP</a>
     </div>
     <div class="siimple-layout--right">
         <a class="siimple-navbar-link">Link 1</a>
@@ -22,9 +22,13 @@
     </div>
 </div>
 <div class="siimple-grid">
-    <div class="siimple-form">
-        <label class="siimple-label">Введіть ІПН:</label>
-        <input id="target-value" type="text" class="siimple-input" placeholder="0123456789" maxlength="10">
+    <div class="siimple-grid-row">
+        <div class="siimple-grid-col siimple-grid-col--1">
+            <div class="siimple-form">
+                <label class="siimple-label">Введіть ІПН:</label>
+                <input id="target-value" type="text" class="siimple-input" placeholder="0123456789" maxlength="10">
+            </div>
+        </div>
     </div>
 
     <div class="siimple-grid-row">
@@ -49,16 +53,24 @@
         <div class="siimple-grid-col siimple-grid-col--1"><div class="siimple-alert siimple-alert--teal">&nbsp;</div></div>
         <div class="siimple-grid-col siimple-grid-col--1"><div class="siimple-alert siimple-alert--green">&nbsp;</div></div>
     </div>
+
+    <div class="siimple-grid-row">
+        <div class="siimple-grid-col siimple-grid-col--6">
+            <div id="error-message" class="siimple-tip siimple-tip--red siimple-tip--exclamation">
+                <strong>Невірний код! Введена контрольна цифра не співпадає!</strong>
+            </div>
+            <div id="info-message">
+                <div class="siimple-tip siimple-tip--teal">
+                    Дата народження власника цього коду: <strong id="birthday"></strong>
+                </div>
+                <div class="siimple-tip siimple-tip--teal">
+                    Стать власника коду: <strong id="sex"></strong>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
-<div id="#error-message" class="siimple-tip siimple-tip--red siimple-tip--exclamation">
-  <strong>Невірний код! Введена контрольна цифра не співпадає!</strong>
-</div>
-<div class="siimple-tip siimple-tip--teal">
-  Дата народження власника цього коду: <strong id="birthday"></strong>
-</div>
-<div class="siimple-tip siimple-tip--teal">
-  Стать власника коду: <strong id="sex"></strong>
-</div>
+
 <!--<div class="siimple-footer siimple-footer&#45;&#45;teal siimple-footer&#45;&#45;fluid" align="center">-->
     <!--just checking footer-->
 <!--</div>-->
