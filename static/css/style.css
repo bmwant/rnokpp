@@ -9,3 +9,23 @@
 #info-message {
   display: none;
 }
+#first-section {
+  background-color: transparent;
+  border: 5px solid #b490f5;
+  border-top: 2px solid white;
+}
+#second-section {
+  background-color: transparent;
+  border: 5px solid #4894f0;
+  border-top: 2px solid white;
+}
+#third-section {
+  background-color: transparent;
+  border: 5px solid #18d2ba;
+  border-top: 2px solid white;
+}
+#fourth-section {
+  background-color: transparent;
+  border: 5px solid #1add9f;
+  border-top: 2px solid white;
+}
