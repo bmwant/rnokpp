@@ -1,0 +1,23 @@
+{
+  "name": "rnokpp",
+  "version": "1.0.0",
+  "description": "Some not usuful data visualizer",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bmwant/rnokpp.git"
+  },
+  "author": "Misha Behersky",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bmwant/rnokpp/issues"
+  },
+  "homepage": "https://github.com/bmwant/rnokpp#readme",
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "siimple": "^3.0.0"
+  }
+}

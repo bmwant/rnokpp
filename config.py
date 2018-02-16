@@ -1,16 +1,7 @@
 import os
+from pathlib import Path
 
-OWNER_NAME = ''  # github organization name
-REPO_NAME = ''  # github repository name
-
-GITHUB_ACCESS_TOKEN = ''  # github token to access api
-
-DEFAULT_LABEL_NAME = 'Needs review'
-
-SLACKBOT_TOKEN = ''  # slack token to send messages
-DEFAULT_SLACK_CHANNEL = '#notifications'
-DEFAULT_SLACK_ICON = ':baby_chick:'
-
+PROJECT_ROOT = Path(os.path.dirname(os.path.realpath(__file__)))
 
 # Override values from config_local.py
 try:
