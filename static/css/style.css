@@ -29,3 +29,26 @@
   border: 5px solid #1add9f;
   border-top: 2px solid white;
 }
+.text-center {
+  text-align: center;
+}
+#data-form {
+  margin-top: 16px;
+}
+#data-form label {
+  font-size: 24px;
+  line-height: 40px;
+}
+#data-form input {
+  background-color: transparent;
+  border: 5px solid #ffbf00;
+  vertical-align: top;
+}
+#data-form input::-webkit-input-placeholder {
+  color: #9d9d9d;
+  opacity: 0.5;
+}
+.siimple-tip {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
