@@ -44,6 +44,14 @@ function isCodeValid(number) {
   return getCheckDigit(number) === lastDigit;
 }
 
+var colors = {
+  'default': '#ebf2fa',
+  'first': '#b490f5',
+  'second': '#4894f0',
+  'third': '#18d2ba',
+  'fourth': '#1add9f'
+};
+
 $(function() {
   $("#target-value").on('keyup', function() {
     var enteredValue = $(this).val();
@@ -61,5 +69,20 @@ $(function() {
         $('#digit-9').removeClass('siimple-alert--red').addClass('siimple-alert--green');
       }
     }
+  });
+
+  $('.digit').mouseenter(function() {
+    var section = $(this).data('section');
+    var sectionColor = $(this).css('background-color');
+    var sectionHint = $('#' + section + '-section-tooltip');
+    sectionHint
+      .css('background-color', colors[section])
+      .addClass('highlighted-text');
+  }).mouseleave(function() {
+    var section = $(this).data('section');
+    var sectionHint = $('#' + section + '-section-tooltip');
+    sectionHint
+      .css('background-color', colors['default'])
+      .removeClass('highlighted-text');
   });
 });

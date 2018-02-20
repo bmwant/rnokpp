@@ -2,6 +2,7 @@
   font-weight: bold;
   font-size: 24px;
   text-align: center;
+  cursor: pointer;
 }
 #error-message {
   display: none;
@@ -14,10 +15,16 @@
   border: 5px solid #b490f5;
   border-top: 2px solid white;
 }
+#first-section-tooltip {
+  width: 80%;
+}
 #second-section {
   background-color: transparent;
   border: 5px solid #4894f0;
   border-top: 2px solid white;
+}
+#second-section-tooltip {
+  width: 60%;
 }
 #third-section {
   background-color: transparent;
@@ -31,6 +38,10 @@
 }
 .text-center {
   text-align: center;
+}
+.col-center {
+  float: none;
+  text-align: left;
 }
 #data-form {
   margin-top: 16px;
@@ -51,4 +62,26 @@
 .siimple-tip {
   padding-top: 20px;
   padding-bottom: 20px;
+}
+.bracket {
+  line-height: 2px;
+  padding-top: 0;
+}
+.bracket-row {
+  height: 30px;
+}
+.tooltip {
+  position: relative;
+  z-index: 999;
+  top: -10px;
+  line-height: 18px;
+  cursor: default;
+  transition: 0.5s ease;
+}
+.highlighted-text {
+  color: white !important;
+  text-shadow: 1px 1px #697496;
+}
+#info-block {
+  margin-top: 80px;
 }
